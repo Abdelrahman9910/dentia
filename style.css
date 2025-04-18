@@ -449,10 +449,7 @@ li a:hover {
   text-align: right;
   padding: 0.5rem 0rem;
   font-weight: 400;
-}
-.article_head {
-  color: #00acb9;
-  font-weight: 550 !important;
+  
 }
 .article_head:hover {
   color: #0873de;
@@ -538,20 +535,24 @@ footer span {
   flex-direction: column;
   text-align: right;
   width: 40%;
+  align-items: end;
 }
 .breif {
   color: #454848bc;
   font-size: 2rem;
-  margin: 1rem 0rem;
+  margin: 1rem 0rem 0.2rem;
   font-weight: bold;
 }
-.breif::after {
-  content: "";
-  position: absolute;
-  right: 30%;
-  top: 90.9%;
+.about p {
+  width: 100%;
+}
+.about img {
+  width: 40%;
+}
+.breif_fakeelemnt {
   width: 3rem;
-  height: 2rem;
+  height: 0rem;
+  margin: 0rem 0rem 0.75rem 0rem;
   border-bottom: 2px solid #454848bc;
 }
 .blog_special a {
@@ -560,20 +561,21 @@ footer span {
 }
 .drs_head {
   width: 100%;
-  padding: 15rem 0rem;
+  padding: 14rem 0rem 15rem 0rem;
   text-align: center;
   font-size: 3rem;
   color: #00acb9;
   font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
   background-color: #e1e5f7;
 }
-.drs_head::after {
-  content: "";
-  position: absolute;
+.drs-fakeelement {
   width: 10%;
   border-bottom: 3px solid black;
-  left: 45%;
-  top: 55%;
+  margin: 1.5rem 0rem 0rem 0rem;
 }
 .drs_profile {
   display: flex;
@@ -648,13 +650,13 @@ footer span {
   /* #mySideNav{
     display: contents;
   } */
-.appoinment ,
+  .appoinment,
   .nav_part2 {
     display: none !important;
   }
-  .nav_part1{
+  .nav_part1 {
     flex-wrap: wrap;
-    height:auto;
+    height: auto;
     justify-content: center;
   }
   .nav_part1 a {
@@ -757,7 +759,7 @@ footer span {
     padding: 0.5rem 0.5rem;
     font-size: 1rem;
   }
-  .part4_child{
+  .part4_child {
     display: none;
   }
   .nav_part3 {
@@ -765,110 +767,140 @@ footer span {
     height: 45vh;
     padding-top: 4rem;
     border-radius: 0px;
+  }
+  .nav_part4 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .part4_child1 span {
+    text-align: center;
+    font-size: 10px;
+  }
+  .part4_child1 a {
+    width: 14rem;
+    font-size: 1rem;
+  }
+  .section_2 {
+    display: none;
+  }
+  .sec2_head {
+    font-size: 1.25rem;
+  }
+  .sec2_child {
+    margin-bottom: 2rem;
+  }
+  .sec2_head::after {
+    width: 100px;
+  }
+  .sec2_head::before {
+    width: 100px;
+    margin: 3.2rem 0rem 0rem 47.5%;
+  }
+  .image-gallery {
+    height: 100px;
+  }
+  .sec3 {
+    margin-top: 1.5rem;
+  }
+  .sec3 {
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 4rem;
+    padding: 2rem 0rem 3rem 0rem;
+  }
+  .sec4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .sec4_head {
+    margin-bottom: 0rem;
+    font-size: 1.25rem;
+  }
+  .sec4_grandchild {
+    gap: 0.5rem;
+  }
+  .sec4_grandchild svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  .sec4_child {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .sec4_grandchild span {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .sec4_grandchild + a {
+    color: #1b2847;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .sec4 iframe {
+    width: 100%;
+  }
+  .blog_child {
+    gap: 2rem;
+  }
+  .blog span {
+    font-size: 1.25rem;
+  }
+  .blog_child a {
+    width: 82%;
+  }
+  .contact {
+    margin-top: 3rem;
+  }
+  .contact {
+    gap: 18rem;
+  }
+  .dentin_logo {
+    width: 4.5rem;
+    height: 1.75rem;
+  }
+  .social_media {
+    width: 1rem;
+    height: 1rem;
+  }
+  footer span {
+    font-size: 10px;
+    width: 25%;
+  }
+  .nav_grandchild a {
+    padding-right: 0rem;
+  }
+  .about img {
+    width: 80%;
+  }
+  .about div {
+    width: 80%;
+  }
+  .drs_head {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 8rem 0rem 9rem 0rem;
 }
-.nav_part4{
-  margin: 0px;
-  padding: 0px;
+.drs_head {
+  font-size: 2rem;
 }
-.part4_child1 span {
-  text-align: center;
-  font-size: 10px;
+.drs-fakeelement {
+  width: 50%;
 }
-.part4_child1 a {
-  width: 14rem;
-  font-size: 1rem;
+.drs_profilechild img {
+  width: 15rem;
+  height: 15rem;
 }
-.section_2{
-  display: none;
+.drs_profilechild {
+  margin: 0rem 0rem 2rem 0rem;
 }
-.sec2_head {
-  font-size: 1.25rem;
+.mandr{
+  margin-top: 0rem;
 }
-.sec2_child {
+.blog_special a {
   margin-bottom: 2rem;
-}
-.sec2_head::after {
-  width: 100px;
-}
-.sec2_head::before {
-  width: 100px;
-  margin: 3.2rem 0rem 0rem 47.5%;
-}
-.image-gallery {
-  height: 100px;
-}
-.sec3 {
-  margin-top: 1.5rem;
-}
-.sec3 {
-  flex-direction: column;
-  margin-top: 1.5rem;
-  gap: 4rem;
-  padding: 2rem 0rem 3rem 0rem;
-}
-.sec4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 3rem;
-}
-.sec4_head {
-  margin-bottom: 0rem;
-  font-size: 1.25rem;
-}
-.sec4_grandchild {
-  gap: 0.5rem;
-}
-.sec4_grandchild svg {
-  width: 1rem;
-  height: 1rem;
-}
-.sec4_child {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-.sec4_grandchild span {
-  font-size: 1rem;
-  font-weight: 700;
-}
-.sec4_grandchild + a {
-  color: #1b2847;
-  text-decoration: none;
-  text-align: left;
-  font-size: 1rem;
-}
-.sec4 iframe {
-  width: 100%;
-}
-.blog_child {
-  gap: 2rem;
-}
-.blog span {
-  font-size: 1.25rem;
-}
-.blog_child a {
-  width: 82%;
-}
-.contact {
-  margin-top: 3rem;
-}
-.contact {
-  gap: 18rem;
-}
-.dentin_logo {
-  width: 4.5rem;
-  height: 1.75rem;
-}
-.social_media {
-  width: 1rem;
-  height: 1rem;
-}
-footer span {
-  font-size: 10px;
-  width: 25%;
-}
-.nav_grandchild a {
-  padding-right: 0rem;
+  height:auto;
 }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -963,6 +995,20 @@ footer span {
   .nav-open-btn {
     display: none;
   }
+  .nav_part5 img {
+    display: none;
+  }
+  .drs_profilechild {
+    margin: 0rem 0rem 3rem 0rem;
+}
+.mandr {
+  margin-top: 0rem;
+}
+.blog_special a {
+  margin-bottom: 2rem;
+  height: 90vw;
+}
+
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
   .appoinment {
@@ -1005,6 +1051,19 @@ footer span {
   .nav-open-btn {
     display: none;
   }
+  .nav_part5 img {
+    display: none;
+  }
+  .drs_profilechild {
+    margin: 0rem 0rem 3rem 0rem;
+}
+.mandr {
+  margin-top: 0rem;
+}
+.blog_special a {
+  margin-bottom: 2rem;
+  height: 58vw;
+}
 }
 @media (min-width: 1440px) and (max-width: 1900px) {
   .nav_part4 {
@@ -1034,6 +1093,19 @@ footer span {
   .nav-open-btn {
     display: none;
   }
+  .nav_part5 img {
+    display: none;
+  }
+  .about div {
+    width: 40%;
+  }
+  .dr-dalia {
+    margin-top: 5rem;
+  }
+  .blog_special a {
+    margin-bottom: 2rem;
+    height: 38vw;
+}
 }
 @media (min-width: 1901px) and (max-width: 2560px) {
   #mySideNav,
@@ -1043,5 +1115,8 @@ footer span {
   .nav_dif,
   .text_decor {
     font-size: 1.5rem;
+  }
+  .nav_part5 img {
+    display: none;
   }
 }
